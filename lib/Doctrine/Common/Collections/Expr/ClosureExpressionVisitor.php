@@ -36,6 +36,12 @@ class ClosureExpressionVisitor extends ExpressionVisitor
      */
     public static function getObjectFieldValue($object, $field)
     {
+        if (strpos($field, '.') !== false) {
+            [$field, $subField] = explode('.', $field, 2);
+            $object = static::getObjectFieldValue($object, $field);
+            return static::getObjectFieldValue($object, $subField);
+        }
+
         if (is_array($object)) {
             return $object[$field];
         }
