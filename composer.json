@@ -26,6 +26,9 @@
         "phpstan/phpstan-shim": "^0.9.2",
         "vimeo/psalm": "^3.2.2"
     },
+    "replace": {
+        "doctrine/collections": "^1.6.4"
+    },
     "autoload": {
         "psr-4": { "Doctrine\\Common\\Collections\\": "lib/Doctrine/Common/Collections" }
     },
