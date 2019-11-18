@@ -1,5 +1,5 @@
 {
-    "name": "doctrine/collections",
+    "name": "someniatko/doctrine-collections",
     "type": "library",
     "description": "PHP Doctrine Collections library that adds additional functionality on top of PHP arrays.",
     "keywords": [
