@@ -32,6 +32,9 @@
     "config": {
         "sort-packages": true
     },
+    "replace": {
+        "doctrine/collections": "^1.6.4"
+    },
     "autoload": {
         "psr-4": { "Doctrine\\Common\\Collections\\": "lib/Doctrine/Common/Collections" }
     },
